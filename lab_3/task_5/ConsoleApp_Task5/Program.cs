@@ -7,26 +7,20 @@ namespace ConsoleApp_Task5
     {
         static void Main(string[] args)
         {
-            var ul = new LightElementNode("ul", DisplayType.Block);
-            ul.AddClass("menu");
+            Console.WriteLine("=== Testing Template Method ===");
 
-            var li1 = new LightElementNode("li");
-            li1.AddClass("menu-item");
-            li1.AddChild(new LightTextNode("Home"));
+            Console.WriteLine("\nCreating elements...");
+            var div = new LightElementNode("div");
+            Console.WriteLine(div.OuterHTML);
 
-            var li2 = new LightElementNode("li");
-            li2.AddClass("menu-item");
-            li2.AddChild(new LightTextNode("About"));
+            var text = new LightTextNode("Hello World");
+            Console.WriteLine(text.OuterHTML);
 
-            ul.AddChild(li1);
-            ul.AddChild(li2);
+            Console.WriteLine("\nAdding child...");
+            div.AddChild(text);
+            Console.WriteLine(div.OuterHTML);
 
-            Console.WriteLine("OuterHTML:");
-            Console.WriteLine(ul.OuterHTML);
-            Console.WriteLine();
-            Console.WriteLine("InnerHTML:");
-            Console.WriteLine(ul.InnerHTML);
-            Console.WriteLine();
+            Console.WriteLine("\nTemplate Method testing complete!");
         }
     }
 }

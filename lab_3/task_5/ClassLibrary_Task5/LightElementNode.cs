@@ -16,6 +16,7 @@ namespace ClassLibrary_Task5
             TagName = tagName;
             Display = DisplayType;
             SelfClosing = selfClosing;
+            OnCreated();
         }
 
         public void AddClass(string className)
@@ -26,6 +27,7 @@ namespace ClassLibrary_Task5
         public void AddChild(LightNode child)
         {
             Children.Add(child);
+            child.OnInserted();
         }
 
         public override string InnerHTML

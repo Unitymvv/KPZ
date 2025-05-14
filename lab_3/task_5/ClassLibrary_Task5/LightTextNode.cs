@@ -7,6 +7,7 @@
         public LightTextNode(string text)
         {
             _text = text;
+            OnCreated();
         }
 
         public override string OuterHTML => _text;
