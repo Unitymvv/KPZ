@@ -1,4 +1,5 @@
 ﻿using ClassLibrary_Task5;
+using ClassLibrary_Task5.Command;
 using System;
 
 namespace ConsoleApp_Task5
@@ -57,7 +58,22 @@ namespace ConsoleApp_Task5
                     Console.WriteLine($"Element: {((LightElementNode)node).TagName}");
             }
 
-            Console.WriteLine("\nIterator testing complete!");
+            Console.WriteLine("\nIterator testing complete!\n");
+
+
+            Console.WriteLine("=== Testing Command ===");
+
+            var element = new LightElementNode("div");
+            Console.WriteLine("Before command: " + element.OuterHTML);
+
+            var command = new AddClassCommand(element, "active");
+            command.Execute();
+            Console.WriteLine("After execute: " + element.OuterHTML);
+
+            command.Undo();
+            Console.WriteLine("After undo: " + element.OuterHTML);
+
+            Console.WriteLine("\nCommand testing complete!");
         }
     }
 }
