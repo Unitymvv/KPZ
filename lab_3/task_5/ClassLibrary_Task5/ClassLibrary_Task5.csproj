@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\AddClassCommand.cs" />
+    <Compile Include="Command\ICommand.cs" />
     <Compile Include="DisplayType.cs" />
     <Compile Include="Iterator\BreadthFirstIterator.cs" />
     <Compile Include="Iterator\DepthFirstIterator.cs" />
