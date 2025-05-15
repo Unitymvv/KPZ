@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using ClassLibrary_Task5.Iterator;
+using System.Collections.Generic;
 using System.Text;
 
 namespace ClassLibrary_Task5
@@ -58,5 +59,8 @@ namespace ClassLibrary_Task5
                 }
             }
         }
+
+        public IIterator GetDepthFirstIterator() => new DepthFirstIterator(this);
+        public IIterator GetBreadthFirstIterator() => new BreadthFirstIterator(this);
     }
 }

@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DisplayType.cs" />
+    <Compile Include="Iterator\BreadthFirstIterator.cs" />
+    <Compile Include="Iterator\DepthFirstIterator.cs" />
+    <Compile Include="Iterator\IIterator.cs" />
     <Compile Include="LightElementNode.cs" />
     <Compile Include="LightNode.cs" />
     <Compile Include="LightTextNode.cs" />
