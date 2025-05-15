@@ -1,5 +1,6 @@
 ﻿using ClassLibrary_Task5;
 using ClassLibrary_Task5.Command;
+using ClassLibrary_Task5.State;
 using System;
 
 namespace ConsoleApp_Task5
@@ -8,6 +9,7 @@ namespace ConsoleApp_Task5
     {
         static void Main(string[] args)
         {
+            #region Testing Template Method 
             Console.WriteLine("=== Testing Template Method ===");
 
             Console.WriteLine("\nCreating elements...");
@@ -22,8 +24,8 @@ namespace ConsoleApp_Task5
             Console.WriteLine(div.OuterHTML);
 
             Console.WriteLine("\nTemplate Method testing complete!");
-
-
+            #endregion
+            #region Testing Iterator
             Console.WriteLine("\n=== Testing Iterator ===");
 
             var root = new LightElementNode("div");
@@ -59,8 +61,8 @@ namespace ConsoleApp_Task5
             }
 
             Console.WriteLine("\nIterator testing complete!\n");
-
-
+            #endregion
+            #region Testing Command
             Console.WriteLine("=== Testing Command ===");
 
             var element = new LightElementNode("div");
@@ -73,7 +75,24 @@ namespace ConsoleApp_Task5
             command.Undo();
             Console.WriteLine("After undo: " + element.OuterHTML);
 
-            Console.WriteLine("\nCommand testing complete!");
+            Console.WriteLine("\nCommand testing complete!\n");
+            #endregion
+            #region Testing State
+            Console.WriteLine("=== Testing State ===");
+
+            element = new LightElementNode("div");
+            Console.WriteLine("Initial State:\n" + element.OuterHTML);
+
+            element.SetDisplayState(new InlineState());
+            Console.WriteLine("\nAfter switching to Inline:\n" + element.OuterHTML);
+
+            element.SetDisplayState(new NoneState());
+            Console.WriteLine("\nAfter switching to None:\n" + element.OuterHTML);
+
+            element.SetDisplayState(new BlockState());
+            Console.WriteLine("\nAfter switching to Block:\n" + element.OuterHTML);
+            Console.WriteLine("\nState testing complete!\n");
+            #endregion
         }
     }
 }
