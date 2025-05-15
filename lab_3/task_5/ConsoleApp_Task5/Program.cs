@@ -1,6 +1,7 @@
 ﻿using ClassLibrary_Task5;
 using ClassLibrary_Task5.Command;
 using ClassLibrary_Task5.State;
+using ClassLibrary_Task5.Visitor;
 using System;
 
 namespace ConsoleApp_Task5
@@ -92,6 +93,31 @@ namespace ConsoleApp_Task5
             element.SetDisplayState(new BlockState());
             Console.WriteLine("\nAfter switching to Block:\n" + element.OuterHTML);
             Console.WriteLine("\nState testing complete!\n");
+            #endregion
+            #region Testing Visitor
+            Console.WriteLine("=== Testing Visitor ===");
+            var html = new LightElementNode("div");
+            html.AddClass("container");
+
+            header = new LightElementNode("h1");
+            header.AddClass("title");
+            header.AddChild(new LightTextNode("Welcome!"));
+            html.AddChild(header);
+
+            var content = new LightElementNode("div");
+            content.AddClass("content active");
+            content.AddChild(new LightTextNode("Sample text"));
+            html.AddChild(content);
+
+            var counter = new ElementCounterVisitor();
+            html.Accept(counter);
+            Console.WriteLine(html.OuterHTML);
+            Console.WriteLine($"Elements: {counter.ElementCount}, Text nodes: {counter.TextCount}");
+
+            var classVisitor = new ClassListVisitor();
+            html.Accept(classVisitor);
+            Console.WriteLine($"Used classes: {string.Join(", ", classVisitor.Classes)}");
+            Console.WriteLine("\nVisitor testing complete!");
             #endregion
         }
     }

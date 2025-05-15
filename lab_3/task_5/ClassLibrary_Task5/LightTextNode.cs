@@ -1,4 +1,6 @@
-﻿namespace ClassLibrary_Task5
+﻿using ClassLibrary_Task5.Visitor;
+
+namespace ClassLibrary_Task5
 {
     public class LightTextNode : LightNode
     {
@@ -13,5 +15,7 @@
         public override string OuterHTML => _text;
 
         public override string InnerHTML => _text;
+
+        public override void Accept(IVisitor visitor) => visitor.VisitText(this);
     }
 }

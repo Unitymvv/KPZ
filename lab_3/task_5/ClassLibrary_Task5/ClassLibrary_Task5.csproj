@@ -55,6 +55,9 @@
     <Compile Include="State\InlineState.cs" />
     <Compile Include="State\BlockState.cs" />
     <Compile Include="State\IDisplayState.cs" />
+    <Compile Include="Visitor\ClassListVisitor.cs" />
+    <Compile Include="Visitor\ElementCounterVisitor.cs" />
+    <Compile Include="Visitor\IVisitor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
