@@ -51,6 +51,10 @@
     <Compile Include="LightNode.cs" />
     <Compile Include="LightTextNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\NoneState.cs" />
+    <Compile Include="State\InlineState.cs" />
+    <Compile Include="State\BlockState.cs" />
+    <Compile Include="State\IDisplayState.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

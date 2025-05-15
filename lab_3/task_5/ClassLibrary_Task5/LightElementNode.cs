@@ -1,4 +1,5 @@
 ﻿using ClassLibrary_Task5.Iterator;
+using ClassLibrary_Task5.State;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +7,7 @@ namespace ClassLibrary_Task5
 {
     public class LightElementNode : LightNode
     {
+        private IDisplayState _displayState;
         public string TagName { get; }
         public DisplayType Display { get; }
         public bool SelfClosing { get; }
@@ -48,19 +50,26 @@ namespace ClassLibrary_Task5
         {
             get
             {
+                string style = "style=\"" + _displayState?.ApplyStyle() + "\"" ?? string.Empty;
                 string classAttr = CssClasses.Count > 0 ? " class=\"" + string.Join(" ", CssClasses) + "\"" : " ";
                 if (SelfClosing)
                 {
-                    return "<" + TagName + classAttr + "/>";
+                    return "<" + TagName + classAttr + style + "/>";
                 }
                 else
                 {
-                    return "<" + TagName + classAttr + ">" + InnerHTML + "</" + TagName + ">";
+                    return "<" + TagName + classAttr + style + ">" + InnerHTML + "</" + TagName + ">";
                 }
             }
         }
 
         public IIterator GetDepthFirstIterator() => new DepthFirstIterator(this);
         public IIterator GetBreadthFirstIterator() => new BreadthFirstIterator(this);
+
+        public void SetDisplayState(IDisplayState state)
+        {
+            _displayState = state;
+            OnStylesApplied();
+        }
     }
 }
