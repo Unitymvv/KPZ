@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLibrary_Task5.Character" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAIEAAAAAQAIAAEAAAEAAAAAgAAAAA=</HashCode>
+      <FileName>Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibrary_Task5.CharacterDirector" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>CharacterDirector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibrary_Task5.EnemyBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAABAAAABAAAAAAAAIIAAgAAAAAAAQAAgAAI=</HashCode>
+      <FileName>EnemyBuilder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task5.HeroBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAEBAAAABAAAAAAAAIIAAgAAAAAAAQAAgAAA=</HashCode>
+      <FileName>HeroBuilder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ClassLibrary_Task5.ICharacterBuilder" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAABAAAABAAAAAAAAIIAAgAAAAAAAQAAgAAA=</HashCode>
+      <FileName>ICharacterBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

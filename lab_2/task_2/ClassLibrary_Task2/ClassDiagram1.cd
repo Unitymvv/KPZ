@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLibrary_Task2.Devices.EBookBalaxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\EBookBalaxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.EBookIProne" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\EBookIProne.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.EBookKiaomi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\EBookKiaomi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.LaptopBalaxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\LaptopBalaxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.LaptopIProne" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\LaptopIProne.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.LaptopKiaomi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\LaptopKiaomi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.NetbookBalaxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\NetbookBalaxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.NetbookIProne" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\NetbookIProne.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.NetbookKiaomi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\NetbookKiaomi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.SmartphoneBalaxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\SmartphoneBalaxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.SmartphoneIProne" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\SmartphoneIProne.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Devices.SmartphoneKiaomi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\SmartphoneKiaomi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Factory.BalaxyFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Factory\BalaxyFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Factory.FactoryClient" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAIBAAAAQAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\FactoryClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibrary_Task2.Factory.IProneFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Factory\IProneFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ClassLibrary_Task2.Factory.KiaomiFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Factory\KiaomiFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ClassLibrary_Task2.Devices.Interface.IDevice" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Devices\Interface\IDevice.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ClassLibrary_Task2.Factory.Interface.IDeviceFactory" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Factory\Interface\IDeviceFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
