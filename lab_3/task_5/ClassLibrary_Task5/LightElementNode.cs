@@ -1,5 +1,6 @@
 ﻿using ClassLibrary_Task5.Iterator;
 using ClassLibrary_Task5.State;
+using ClassLibrary_Task5.Visitor;
 using System.Collections.Generic;
 using System.Text;
 
@@ -71,5 +72,7 @@ namespace ClassLibrary_Task5
             _displayState = state;
             OnStylesApplied();
         }
+
+        public override void Accept(IVisitor visitor) => visitor.VisitElement(this);
     }
 }
